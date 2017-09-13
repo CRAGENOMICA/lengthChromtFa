@@ -24,7 +24,7 @@
 
 void help(std::string name) {
     std::cerr << "lengthChromtFa\n"
-            << "Usage: ./lengthChromtFa -i file.tfa(.gz) -o output\n"
+            << "Usage: ./lengthChromtFa -i file.tfa(.gz) -o output.txt\n"
             << "Options:\n"
             << "\t-h\t\tHelp and exit\n"
             << "\t-i\t\tCompressed or uncompressed tFasta file to analyze\n"
