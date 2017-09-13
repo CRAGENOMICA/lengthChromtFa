@@ -65,7 +65,7 @@ LDLIBSOPTIONS=
 
 ${CND_DISTDIR}/lengthChromtFa: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}
-	${LINK.cc} -o ${CND_DISTDIR}/lengthChromtFa ${OBJECTFILES} ${LDLIBSOPTIONS} -lz -l:libboost_iostreams.a
+	${LINK.cc} -o ${CND_DISTDIR}/lengthChromtFa ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/CStringTools.o: ${CND_SOURCES}/CStringTools.cpp 
 	${MKDIR} -p ${OBJECTDIR}

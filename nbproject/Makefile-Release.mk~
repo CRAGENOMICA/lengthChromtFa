@@ -26,6 +26,7 @@ CND_DLIB_EXT=so
 CND_CONF=Release
 CND_DISTDIR=bin
 CND_BUILDDIR=build
+CND_SOURCES=sources
 
 # Include project Makefile
 include Makefile
@@ -66,30 +67,30 @@ ${CND_DISTDIR}/lengthChromtFa: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}
 	${LINK.cc} -o ${CND_DISTDIR}/lengthChromtFa ${OBJECTFILES} ${LDLIBSOPTIONS} -lz -l:libboost_iostreams.a
 
-${OBJECTDIR}/CStringTools.o: CStringTools.cpp 
+${OBJECTDIR}/CStringTools.o: ${CND_SOURCES}/CStringTools.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CStringTools.o CStringTools.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CStringTools.o ${CND_SOURCES}/CStringTools.cpp
 
-${OBJECTDIR}/File.o: File.cpp 
+${OBJECTDIR}/File.o: ${CND_SOURCES}/File.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/File.o File.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/File.o ${CND_SOURCES}/File.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/main.o: ${CND_SOURCES}/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o ${CND_SOURCES}/main.cpp
 
-${OBJECTDIR}/zindex.o: zindex.c 
+${OBJECTDIR}/zindex.o: ${CND_SOURCES}/zindex.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/zindex.o zindex.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/zindex.o ${CND_SOURCES}/zindex.c
 
-${OBJECTDIR}/zutil.o: zutil.c 
+${OBJECTDIR}/zutil.o: ${CND_SOURCES}/zutil.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/zutil.o zutil.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/zutil.o ${CND_SOURCES}/zutil.c
 
 # Subprojects
 .build-subprojects:
