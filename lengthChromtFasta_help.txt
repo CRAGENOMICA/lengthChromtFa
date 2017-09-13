@@ -1,0 +1,9 @@
+#lengthChromtFasta v0.1 (20170913) Jordi Leno-Colorado
+
+Usage: ./lengthChromtFa -i file.tfa(.gz) -o output.txt
+
+Flags:
+      -i [Compressed or uncompressed tFasta file to analyze]
+      -o [Output file to write the length of chromosomes]
+   OPTIONAL PARAMETERS:
+      -h [help and exit]
